@@ -9,93 +9,93 @@ db_1.default.once('open', async () => {
     await City_1.default.deleteMany();
     const cities = [
         {
-            name: 'paris',
+            name: 'delhi',
             neighbors: [
-                { name: 'rome', distance: 10 },
-                { name: 'london', distance: 20 },
-                { name: 'miami', distance: 30 },
+                { name: 'mumbai', distance: 10 },
+                { name: 'kolkata', distance: 20 },
+                { name: 'jaipur', distance: 30 },
             ],
         },
         {
-            name: 'rome',
+            name: 'mumbai',
             neighbors: [
-                { name: 'paris', distance: 10 },
-                { name: 'madrid', distance: 15 },
-                { name: 'tokyo', distance: 25 },
+                { name: 'delhi', distance: 10 },
+                { name: 'pune', distance: 15 },
+                { name: 'nashik', distance: 25 },
             ],
         },
         {
-            name: 'london',
+            name: 'kolkata',
             neighbors: [
-                { name: 'paris', distance: 20 },
-                { name: 'miami', distance: 10 },
-                { name: 'sydney', distance: 40 },
+                { name: 'delhi', distance: 20 },
+                { name: 'jaipur', distance: 10 },
+                { name: 'vizag', distance: 40 },
             ],
         },
         {
-            name: 'miami',
+            name: 'jaipur',
             neighbors: [
-                { name: 'paris', distance: 30 },
-                { name: 'london', distance: 10 },
-                { name: 'quito', distance: 35 },
+                { name: 'delhi', distance: 30 },
+                { name: 'kolkata', distance: 10 },
+                { name: 'nagpur', distance: 35 },
             ],
         },
         {
-            name: 'madrid',
+            name: 'pune',
             neighbors: [
-                { name: 'rome', distance: 15 },
-                { name: 'istanbul', distance: 12 },
-                { name: 'dubai', distance: 22 },
+                { name: 'mumbai', distance: 15 },
+                { name: 'cochin', distance: 12 },
+                { name: 'aurangabad', distance: 22 },
             ],
         },
         {
-            name: 'tokyo',
+            name: 'nashik',
             neighbors: [
-                { name: 'rome', distance: 25 },
-                { name: 'dubai', distance: 18 },
+                { name: 'mumbai', distance: 25 },
+                { name: 'aurangabad', distance: 18 },
             ],
         },
         {
-            name: 'sydney',
+            name: 'vizag',
             neighbors: [
-                { name: 'london', distance: 40 },
-                { name: 'jerusalem', distance: 28 },
+                { name: 'kolkata', distance: 40 },
+                { name: 'chennai', distance: 28 },
             ],
         },
         {
-            name: 'quito',
+            name: 'nagpur',
             neighbors: [
-                { name: 'miami', distance: 35 },
-                { name: 'toronto', distance: 45 },
+                { name: 'jaipur', distance: 35 },
+                { name: 'hyderabad', distance: 45 },
             ],
         },
         {
-            name: 'istanbul',
+            name: 'cochin',
             neighbors: [
-                { name: 'madrid', distance: 12 },
-                { name: 'jerusalem', distance: 20 },
+                { name: 'pune', distance: 12 },
+                { name: 'chennai', distance: 20 },
             ],
         },
         {
-            name: 'dubai',
+            name: 'aurangabad',
             neighbors: [
-                { name: 'madrid', distance: 22 },
-                { name: 'tokyo', distance: 18 },
-                { name: 'toronto', distance: 30 },
+                { name: 'pune', distance: 22 },
+                { name: 'nashik', distance: 18 },
+                { name: 'hyderabad', distance: 30 },
             ],
         },
         {
-            name: 'jerusalem',
+            name: 'chennai',
             neighbors: [
-                { name: 'sydney', distance: 28 },
-                { name: 'istanbul', distance: 20 },
+                { name: 'vizag', distance: 28 },
+                { name: 'cochin', distance: 20 },
             ],
         },
         {
-            name: 'toronto',
+            name: 'hyderabad',
             neighbors: [
-                { name: 'quito', distance: 45 },
-                { name: 'dubai', distance: 30 },
+                { name: 'nagpur', distance: 45 },
+                { name: 'aurangabad', distance: 30 },
             ],
         },
     ];

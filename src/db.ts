@@ -1,8 +1,6 @@
 import mongoose from 'mongoose';
 
-mongoose.connect('mongodb+srv://danluck001:maxpayne5@cluster0.qkvb6c9.mongodb.net/', {
-//   useNewUrlParser: true,
-//   useUnifiedTopology: true,
+mongoose.connect('mongodb+srv://ckrajantv:rajan%40123@cluster0.ckivzx4.mongodb.net/', {
 });
 
 export default mongoose.connection;
